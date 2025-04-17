@@ -55,7 +55,38 @@
 									<p>Inital Post:In table 1 of Padhy et al. (2021), the article states that various factors influence the reusability of object-oriented software components. The first component is modularity, in highly modular code, the code is usually easier to understand, test and use in other systems, this allows for components to be used independently. Cohesion in code increases reusability in the code as the classes tend to have a clear and focused purpose.
 Moreover, Low coupling is generally very desirable as the components don’t rely heavily on one and another and Lower complexity is regarded as good because the components are easier to adapt and understand. Well-documented code increases its reusability because it allows developers to understand the code. Further, smaller components tend to be more reusable because they are not tightly bound to very specific use cases. The proper usage of inheritance can promote reusability.
 </p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+									<p>Data structures are considered very important building blocks in OOP, data structures help organise, store and manage data effectively. Data structures support key concepts like inheritance, encapsulation and polymorphism. Here is a list of data structures that support OOP development.
+ 
+Lists:
+Multiple instances of class are supported by lists, it supports oop through encapsulation for example, A list can be added as a private attribute within a class.
+ 
+class Student:
+	def __init__(self, name):
+    	self.name = name
+ 
+students = [Student("Alice"), Student("Bob")]
+ 
+for s in students:
+	print(s.name)
+ 
+ 
+Dictionaries:
+Dictionaries support OOP by Encapsulation, this is because a class can manage its own dictionary internally. In composition objects can store nested data.
+ 
+class Inventory:
+	def __init__(self):
+    	self.items = {}  # e.g., {"apple": 10, "banana": 5}
+ 
+	def add_item(self, name, quantity):
+    	self.items[name] = quantity
+ 
+	def get_quantity(self, name):
+    	return self.items.get(name, 0)
+ 
+store = Inventory()
+store.add_item("apple", 10)
+print(store.get_quantity("apple"))
+</p>
 									<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 									<p></p><a href="digitalportfolioevaluationform.pdf">PDF for test</a><p>
 									<a href="https://github.com/nolaniyi/sample-portfolio"> A GitHub repository/site</a>
